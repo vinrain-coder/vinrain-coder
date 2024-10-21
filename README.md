@@ -1,0 +1,7 @@
+- 👋 Hi, I’m @vinrain-coder
+- 👀 I’m interested in building dynamic web applications, optimizing user interfaces, and exploring new technologies in the MERN stack and Next.js.
+- 🌱 I’m currently learning advanced UI/UX optimization techniques, 3D portfolio design, and enhancing my skills in Framer Motion and Vite.
+- 💞️ I’m looking to collaborate on open-source projects, innovative eCommerce platforms, and any project that leverages modern web frameworks.
+- 📫 How to reach me: vincentombogo57@gmail.com
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: I’m always experimenting with new CSS animations and love finding ways to make websites more interactive and responsive!
