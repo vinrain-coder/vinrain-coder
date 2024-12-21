@@ -1,3 +1,4 @@
-- 👋 Hi, I’m @vinrain-coder
-- 👀 I’m interested in building dynamic web applications, optimizing user interfaces, and exploring new technologies in the MERN stack and Next.js.
-- 💞️ I’m looking to collaborate on open-source projects, innovative eCommerce platforms, and any project that leverages modern web frameworks.
+<div style="text-align: center; background-color: #f4f4f4; padding: 20px;">
+  <h1 style="color: #333;">Welcome to My Project</h1>
+  <p style="color: #555;">A cool project made with ❤️</p>
+</div>
