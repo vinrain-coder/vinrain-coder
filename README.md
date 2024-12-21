@@ -3,88 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comprehensive Banner</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Professional Banner</title>
   <style>
     /* General Reset */
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #f3f4f6;
+      background-color: #f4f4f9;
       color: #333;
     }
     .banner {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
-      height: 350px;
-      background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffd452);
+      height: 400px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
-      overflow: hidden;
       position: relative;
+      overflow: hidden;
     }
-    .circle {
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0.3;
-      animation: move 8s infinite alternate;
-    }
-    .circle.one {
-      background: rgba(255, 255, 255, 0.3);
-      width: 120px;
-      height: 120px;
-      top: 10%;
-      left: 10%;
-    }
-    .circle.two {
-      background: rgba(255, 255, 255, 0.2);
-      width: 180px;
-      height: 180px;
-      top: 50%;
-      left: 80%;
-    }
-    .circle.three {
-      background: rgba(255, 255, 255, 0.1);
-      width: 200px;
-      height: 200px;
-      top: 80%;
-      left: 30%;
-    }
-    @keyframes move {
-      0% {
-        transform: translate(0, 0);
-      }
-      100% {
-        transform: translate(20px, -20px);
-      }
-    }
-    /* Banner Content */
+    /* Banner Text */
     .banner h1 {
       font-size: 3.5rem;
-      font-weight: bold;
       margin: 0;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     }
     .banner p {
       font-size: 1.3rem;
-      margin: 10px 0 20px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      margin: 10px 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     }
+    /* Floating Decorative Elements */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      animation: float 6s infinite ease-in-out alternate;
+    }
+    .circle.one {
+      width: 120px;
+      height: 120px;
+      top: 10%;
+      left: 15%;
+    }
+    .circle.two {
+      width: 200px;
+      height: 200px;
+      bottom: 10%;
+      right: 20%;
+    }
+    .circle.three {
+      width: 150px;
+      height: 150px;
+      bottom: 20%;
+      left: 5%;
+    }
+    @keyframes float {
+      from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(15px, -15px);
+      }
+    }
+    /* Skills Section */
     .skills {
-      text-align: center;
-      margin: 30px auto;
-      padding: 20px;
+      margin: 20px auto;
       max-width: 900px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
     .skills h2 {
       font-size: 2rem;
-      margin-bottom: 15px;
-      color: #333;
+      margin-bottom: 20px;
+      color: #444;
     }
     .skills-list {
       display: flex;
@@ -93,36 +87,37 @@
     }
     .skill {
       text-align: center;
-      width: 150px;
       margin: 15px;
+      width: 150px;
     }
     .skill i {
-      font-size: 2.5rem;
-      color: #ff758c;
+      font-size: 3rem;
+      color: #2575fc;
       margin-bottom: 10px;
     }
     .skill h3 {
       font-size: 1.2rem;
-      margin: 0;
-      color: #444;
+      color: #333;
+      margin: 10px 0;
     }
     .skill p {
       font-size: 0.9rem;
       color: #666;
     }
-    .typing-animation {
-      font-size: 1.5rem;
+    /* Typing Animation */
+    .typing {
+      font-size: 1.4rem;
       font-weight: bold;
-      color: #444;
-      margin-top: 20px;
+      color: #2575fc;
       text-align: center;
+      margin-top: 30px;
     }
-    .typing-animation span {
-      display: inline-block;
-      border-right: 2px solid #444;
+    .typing span {
+      border-right: 2px solid #2575fc;
       white-space: nowrap;
       overflow: hidden;
-      animation: typing 4s steps(30, end) infinite, blink 0.6s step-end infinite;
+      display: inline-block;
+      animation: typing 3s steps(30, end) infinite, blink 0.5s step-end infinite;
     }
     @keyframes typing {
       from {
@@ -140,11 +135,11 @@
   </style>
 </head>
 <body>
+  <!-- Banner Section -->
   <div class="banner">
-    <div>
-      <h1>Welcome to My Github</h1>
-      <p>Creating Modern Web Solutions with Passion and Precision</p>
-    </div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Building Modern Web Solutions with Passion</p>
+    <!-- Floating Circles -->
     <div class="circle one"></div>
     <div class="circle two"></div>
     <div class="circle three"></div>
@@ -157,63 +152,56 @@
       <div class="skill">
         <i class="fas fa-code"></i>
         <h3>Web Development</h3>
-        <p>Responsive and dynamic websites using modern frameworks.</p>
+        <p>Responsive and interactive websites.</p>
       </div>
       <div class="skill">
         <i class="fas fa-paint-brush"></i>
         <h3>UI/UX Design</h3>
-        <p>Creating user-friendly and visually appealing designs.</p>
+        <p>Intuitive and aesthetic user interfaces.</p>
       </div>
       <div class="skill">
         <i class="fas fa-database"></i>
-        <h3>Database Management</h3>
-        <p>Efficient data storage and retrieval solutions.</p>
-      </div>
-      <div class="skill">
-        <i class="fas fa-chart-line"></i>
-        <h3>SEO Optimization</h3>
-        <p>Improving website visibility on search engines.</p>
-      </div>
-      <div class="skill">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Mobile Apps</h3>
-        <p>Building apps that work seamlessly on all devices.</p>
+        <h3>Database</h3>
+        <p>Efficient data storage and management.</p>
       </div>
       <div class="skill">
         <i class="fas fa-cloud"></i>
-        <h3>Cloud Integration</h3>
-        <p>Deploying scalable and reliable cloud solutions.</p>
+        <h3>Cloud Solutions</h3>
+        <p>Scalable cloud-based applications.</p>
       </div>
     </div>
   </div>
 
   <!-- Typing Animation -->
-  <div class="typing-animation">
-    <span id="typed-text"></span>
+  <div class="typing">
+    <span id="typing-text"></span>
   </div>
 
   <!-- JavaScript for Typing Animation -->
   <script>
-    const text = "Exploring the Art of Development and Design!";
+    const text = "Creating solutions for the modern web!";
     const speed = 100; // Typing speed in milliseconds
     let index = 0;
 
     function typeText() {
-      const typedText = document.getElementById("typed-text");
+      const typingText = document.getElementById("typing-text");
       if (index < text.length) {
-        typedText.textContent += text.charAt(index);
+        typingText.textContent += text.charAt(index);
         index++;
         setTimeout(typeText, speed);
       } else {
         setTimeout(() => {
-          typedText.textContent = ""; // Clear text
-          index = 0; // Reset index
-          typeText(); // Restart animation
+          typingText.textContent = ""; // Reset text
+          index = 0; // Restart typing
+          typeText(); // Loop the animation
         }, 2000);
       }
     }
 
     typeText();
   </script>
+
+  <!-- Add Font Awesome for Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
